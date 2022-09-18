@@ -1,0 +1,15 @@
+{
+  "name": "the-benchmark-power",
+  "version": "1.0.0",
+  "description": "",
+  "main": "raw-http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.9.0"
+  }
+}
