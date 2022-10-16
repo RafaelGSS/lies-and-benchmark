@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autocannon": "^7.9.0",
-    "nodeplotlib": "^1.1.2"
+    "autocannon": "^7.9.0"
   }
 }
