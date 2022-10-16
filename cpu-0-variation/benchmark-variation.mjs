@@ -12,9 +12,9 @@ if (!cpuN) {
 
 const instance = autocannon({
   url: 'http://localhost:8080',
-  connections: 100, //default
-  pipelining: 1, // default
-  duration: 30 // default
+  connections: 100,
+  pipelining: 1,
+  duration: 30
 }, (err, result) => {
   if (err) throw err
   if (result.errors !== 0) {
@@ -36,6 +36,9 @@ instance.on('response', (_client, statusCode, _resBytes, responseTime) => {
       reqTick[tick] = []
     }
     reqTick[tick].push(responseTime)
+  } else {
+    console.error('Invalid statusCode', statusCode)
+    process.exit(1)
   }
 })
 
