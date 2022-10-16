@@ -61,8 +61,8 @@ L3 cache:                        50 MiB
 
 ### CPU-0
 
-![](https://user-images.githubusercontent.com/26234614/196053358-68257223-11c7-475a-9342-8024cc22fd44.png)
+![](./CPU0-Result.png)
 
 ### CPU-1
 
-![](https://user-images.githubusercontent.com/26234614/196053359-01510ee7-6043-45e7-94a4-60a612d59bd1.png)
+![](./CPU1-Result.png)
