@@ -1,7 +1,7 @@
 const http = require('http');
 
 const requestListener = function (req, res) {
-  const delay = Math.random() * (350 - 100) + 100;
+  const delay = Math.random() * (350 - 75) + 73;
   setTimeout(() => {
     res.writeHead(200);
     res.end('Hello, World!');

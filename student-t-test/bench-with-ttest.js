@@ -6,8 +6,8 @@ const path = require('path')
 async function run(resultArr) {
   const result = await autocannon({
     url: 'http://localhost:8080',
-    connections: 100,
-    duration: 10
+    connections: 200,
+    duration: 5
   })
   if (result.errors !== 0) {
     console.error('The result contain errors. Retry.')
@@ -44,7 +44,7 @@ function stopServer(child) {
 }
 
 async function main() {
-  const totalRuns = 15
+  const totalRuns = 30
   const servers = spawnServer()
 
   console.log('starting server A...')
@@ -78,7 +78,7 @@ async function main() {
   console.log('A', A)
   console.log('B', B)
   const res = ttest(A, B)
-  const pValue = res.pValue() * 100
+  const pValue = res.pValue()
   if (pValue > 5) {
     console.log(`It's NOT a significant difference - `, res.pValue())
   } else {
