@@ -79,10 +79,10 @@ async function main() {
   console.log('B', B)
   const res = ttest(A, B)
   const pValue = res.pValue()
-  if (pValue > 5) {
-    console.log(`It's NOT a significant difference - `, res.pValue())
-  } else {
+  if (pValue <= 5) {
     console.log(`It's a significant difference - `, res.pValue())
+  } else {
+    console.log(`It's NOT a significant difference - `, res.pValue())
   }
 }
 

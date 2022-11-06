@@ -18,7 +18,7 @@ const B = [
   4676, 4624, 4661, 4636, 4633
 ]
 
-const res = ttest(A, B, {})
+const res = ttest(A, B, { varEqual: true })
 console.log(res.pValue(), res.pValue() * 100)
 
 const A1 = [
@@ -39,5 +39,5 @@ const B1 = [
   4654, 4651, 4619, 4637, 4620
 ]
 
-const res1 = ttest(A1, B1, {})
+const res1 = ttest(A1, B1, { varEqual: true, alpha: 0.05 })
 console.log(res1.pValue(), res1.pValue() * 100)
