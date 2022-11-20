@@ -1,11 +1,7 @@
-# The Benchmark Power
+# Lies, Damn Lies, and Benchmark
 
-### Benchmark Tools
+This repository contains some code samples used in my talk: "Lies, Damn Lies, and Benchmark".
 
-* Autocannon
-  `npx autocannon -d 60 -c 1000 -l http://localhost:8080`
-* Wrk2
-* JMeter
-* AB
+_All the study will be shared across some articles and eventually, a book._ (Follow me on [Twitter][] for further information)
 
-
+[Twitter]: https://twitter.com/_rafaelgss

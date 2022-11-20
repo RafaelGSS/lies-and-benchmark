@@ -22,8 +22,11 @@ fig,ax = plt.subplots()
 ax.hist(A, label="A", density=True, histtype="stepfilled")
 ax.hist(B, label="B", density=True, histtype="stepfilled")
 plt.legend()
-# plt.show()
+plt.savefig("hist.png")
 
+########
+
+plt.clf()
 A1 = [
   46.37, 45.43, 45.1, 43.25, 45.51,
   46.8,  45.3, 43.58, 43.3, 45.42,
@@ -43,7 +46,6 @@ B1 = [
   44.66, 45.55
 ]
 
-plt.clf()
 ret = plt.boxplot([A1, B1], labels=["A", "B"], showmeans=True, positions=[1, 1.3], patch_artist=True)
 ret["boxes"][0].set_facecolor("lightgreen")
 ret["boxes"][1].set_facecolor("lightblue")
